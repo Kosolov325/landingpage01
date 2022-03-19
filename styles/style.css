@@ -6,30 +6,35 @@
     box-sizing: border-box;
 }
 
-a, a:visited{
+p, a:visited{
+    font-size: medium;
+    text-align: center;
     padding: 3px 5px;
-    background-color:  transparent;
-    color: #d0d3d5;
+    color: rgb(228, 222, 222);
 }
 
-a:hover{
-    color: gray;
+p:hover{
+    color: rgb(255, 255, 255);
 }
 
 body {
-    background: linear-gradient(90deg, cadetblue 0%, #6BB3B5 50%, cadetblue 100%);
+    background: linear-gradient(90deg, rgb(28, 78, 82) 0%, rgb(59, 163, 168) 35%, rgb(45, 97, 97) 100%);
+    background-image: url(../assets/background.jpg);
+    background-repeat: no-repeat; 
 }
 
 .header {
-    height: 40px;
-    display: flex;
+    height: 38px;
+    width: 100%;
+    display: block;
     align-items: center;
-    background-color: #579294;
+    background: linear-gradient(90deg, rgb(28, 78, 82) 0%, rgb(59, 163, 168) 35%, rgb(45, 97, 97) 100%);
 }
 
 .menu{
     width: 500px;
-    display: flex;
+    display: inline-flex;
+    padding: 5px;
     justify-content: space-around;
     font-family: 'Overpass',sans-serif;
     font-weight: 400;
@@ -39,18 +44,48 @@ body {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 80px;
-    display: flex;
+    height: 92px;
+    display: block;
     align-items: center;
-    background-color: #579294;
+    background: linear-gradient(90deg, rgb(28, 78, 82) 0%, rgb(59, 163, 168) 35%, rgb(45, 97, 97) 100%);
 }
 
 .menu-footer {
     width: 500px;
     display: flex;
+    margin: auto;
+    padding: 10px;
     justify-content: space-around;
     font-family: 'Overpass',sans-serif;
     font-weight: 400;
+}
+
+.menu-footer p, a:visited{
+    font-size: small;
+    text-align: center;
+    padding: 3px 5px;
+    color: #fff;
+}
+
+.menu-footer p:hover{
+    border-radius: 4px;
+    background-color: #d5d5d6;
+}
+
+#sign {
+    position: relative;
+    left: 785px;
+    
+}
+
+#github {
+    position:fixed;
+    left:100px;
+}
+
+#rights{
+    position: fixed;
+    right: 100px;
 }
 
 .container {
@@ -65,26 +100,49 @@ body {
     margin-left: 950px;
     width: 200px;
     position: absolute;
-    transition: all 400ms ease-in-out;
+    transition: all 1s ease-in-out;
     font-family: 'Times New Roman', Times, serif;
-    box-shadow: 20px 10px 12px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 20px 10px 12px 1px rgba(36, 35, 35, 0.2);
     border-radius: 10px;
     padding: 10px;
 }
 
 .carro{
+    z-index: 1;
     position: absolute;
-    transition: all 400ms ease-in-out;
+    pointer-events: none;
+    filter: drop-shadow(-15px 5px 10px rgb(36, 35, 35));
 }
 
-.carro:hover {
+.parts{
+    z-index: -1;
+    position: absolute;
+    transition: all 800ms ease-in-out;
+}
+
+.parts:hover {
+    z-index: 2;
     transform: scale3d(1.1,1.1,2);
-    filter: drop-shadow(20px 8px 12px #323232);
+    filter: drop-shadow(20px 8px 12px black);
     
 }
 
-.carro:hover, .active{
-    transition: all 400ms ease-in-out;
+.parts:hover, .active{
+    transition: all 800ms ease-in-out;
     opacity: 1;
 }
 
+img#portas{
+    left: 548px;
+    top: 151px;
+}
+
+img#lanternas{
+    left: 653px;
+    top: 263px;
+}
+
+img#footer{
+    display: block;
+    margin: auto;
+}

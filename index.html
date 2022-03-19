@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landpage</title>
+    <title>Landing page</title>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,17 +13,18 @@
 <body>
      <header class="header">
          <div class="menu">
-            <a href="index.html">Home</a>
-            <a href="index.html">Contato</a>
-            <a href="index.html">Informações</a>
+            <a href="index.html"><p>Home</p></a>
+            <a href="index.html"><P>Contato</P></a>
+            <a href="index.html"><p>Informações</p></a>
+            <a id="sign" href="index.html"><p>Login</p></a>
+            <a id="sign" href="index.html"><p>Register</p></a>
          </div>
      </header>
 
-     <div class="container">
-                 <img src="assets/car/carro.png"/>
-
-                 <img class="carro" id="lanternas" src="assets/car/lanternas.png" onclick="showText(this.id)"/> 
-                 <img class="carro" id="portas" src="assets/car/porta.png" onclick="showText(this.id)"/>     
+     <div class="container"> 
+                 <img class="carro" src="assets/car/carro.png"/>
+                 <img class="parts" id="lanternas" src="assets/car/lanternas.png" onclick="showText(this.id)"/> 
+                 <img class="parts" id="portas" src="assets/car/porta.png" onclick="showText(this.id)"/>  
                  <div class="texto" id="lanternas">
                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dolorem dolorum natus doloremque adipisci non laudantium? Sequi recusandae hic culpa, sapiente necessitatibus architecto mollitia. Modi corporis corrupti porro sint neque.
                  </div>
@@ -35,7 +36,9 @@
 
      <footer class="footer">
          <div class="menu-footer">
-              <a href="https://www.github.com/Kosolov325" target="__blank">Github</a>
+              <a id="github" href="https://www.github.com/Kosolov325" target="__blank"><p>Created and mantained by Kosolov325</p></a>
+              <img id="footer" src="assets/footer.png"/>
+              <a id="rights" href="https://www.github.com/Kosolov325" target="__blank"><p>@ All rights reserved</p></a>
          </div>
      </footer>
 
