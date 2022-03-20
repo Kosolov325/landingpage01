@@ -13,16 +13,19 @@
 <body>
      <header class="header">
          <nav class="menu">
+          <div id="navi">
             <a href="index.html"><p>Home</p></a>
             <a href="index.html"><P>Contato</P></a>
             <a href="index.html"><p>Informações</p></a>
-            <a id="sign" href="index.html"><p>Login</p></a>
-            <a id="sign" href="index.html"><p>Register</p></a>
+         </div>
+         <div id="sign">
+            <a href="index.html" id="sign"><p>Login</p></a>
+            <a href="index.html" id="sign"><p>Register</p></a>
          </div>
      </header>
 
-     <div class="container"> 
-                 <img class="carro" src="assets/car/carro-backup.png"/>
+    <main class="main">
+                 <img class="carro" id="carro" src="assets/car/carro-backup.png"/>
                  <img class="parts" id="lanternas" src="assets/car/lanternas.png" onclick="showText(this.id)"/> 
                  <img class="parts" id="portas" src="assets/car/porta.png" onclick="showText(this.id)"/>  
                  <img class="parts" id="capo" src="assets/car/capo.png" onclick="showText(this.id)"/>
@@ -44,8 +47,8 @@
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa tempore, et natus esse beatae quisquam, aliquam facilis quo ut porro quod, impedit velit incidunt debitis minus eum ea suscipit vel?
                     Aspernatur, quia quos voluptas voluptate modi, obcaecati magnam labore perspiciatis dignissimos nihil pariatur tempora commodi distinctio iste omnis laborum maiores odit hic? Ab id delectus obcaecati labore officia animi voluptatum!
                 </div>
-     </div>
-
+    </main>
+    
      <footer class="footer">
          <nav class="menu-footer">
               <a id="github" href="https://www.github.com/Kosolov325" target="__blank"><p>Created and mantained by Kosolov325</p></a>
