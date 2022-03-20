@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -18,6 +19,8 @@ p:hover{
 }
 
 body {
+    position: flex;
+    justify-content: center;
     background: linear-gradient(90deg, rgb(28, 78, 82) 0%, rgb(59, 163, 168) 35%, rgb(45, 97, 97) 100%);
     background-image: url(../assets/background.jpg);
     background-repeat: no-repeat; 
@@ -32,7 +35,7 @@ body {
 }
 
 .menu{
-    width: 500px;
+    width: 100%;
     display: inline-flex;
     padding: 5px;
     justify-content: space-around;
@@ -73,9 +76,6 @@ body {
 }
 
 #sign {
-    position: relative;
-    left: 785px;
-    
 }
 
 #github {
@@ -123,7 +123,7 @@ body {
 .parts:hover {
     z-index: 2;
     transform: scale3d(1.1,1.1,2);
-    filter: drop-shadow(20px 8px 12px black);
+    filter: drop-shadow(1px 8px 10px rgb(0, 0, 0));
     
 }
 
@@ -138,8 +138,19 @@ img#portas{
 }
 
 img#lanternas{
+    z-index: 1;
     left: 653px;
     top: 263px;
+}
+
+img#capo{
+    left: 625px;
+    top: 204px;
+}
+
+img#parabrisa{
+    left: 600px;
+    top: 153px;
 }
 
 img#footer{
