@@ -4,6 +4,7 @@
     border: none;
     text-decoration: none;
     box-sizing: border-box;
+    /* height: 100vh; */
 }
 
 p, a:visited {
@@ -19,9 +20,9 @@ p:hover {
 
 body {
     position: flex;
+
     justify-content: center;
-    background-image: url(../assets/background.jpg);
-    background-repeat: no-repeat; 
+    overflow:auto;
 }
 
 .header {
@@ -62,7 +63,8 @@ body {
     display: flex;
     align-items: center;
     background: linear-gradient(90deg, rgb(28, 78, 82) 0%, rgb(59, 163, 168) 35%, rgb(45, 97, 97) 100%);
-}
+
+} 
 
 .menu-footer {
     width: 500px;
@@ -97,10 +99,21 @@ body {
 }
 
 .main {
+    width: 100vw;
+    height: 100%;
     background: linear-gradient(90deg, rgb(28, 78, 82) 0%, rgb(59, 163, 168) 35%, rgb(45, 97, 97) 100%);
     display: flex;
-    margin-top: 80px;
     justify-content: center;
+}
+
+.main .background{
+    position: absolute;
+}
+
+.background > img{
+    /* height: 600px; */
+    max-width: 100%;
+    height: 100%;
 }
 
 .texto {

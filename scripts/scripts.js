@@ -1,5 +1,5 @@
-var oldelementId;
-var oldText;
+let oldelementId;
+let oldText;
 function showText(elementId) {
     const texto = document.querySelector(`div.texto#${elementId}`);
     if (oldelementId != null && oldelementId != elementId) {
